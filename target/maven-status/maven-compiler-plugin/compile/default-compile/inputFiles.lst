@@ -1,0 +1,17 @@
+C:\Users\e106717\IdeaProjects\repos\TODO\online-todo-list\src\main\java\com\deloitee\online\todolist\service\UserService.java
+C:\Users\e106717\IdeaProjects\repos\TODO\online-todo-list\src\main\java\com\deloitee\online\todolist\config\BeanConfiguration.java
+C:\Users\e106717\IdeaProjects\repos\TODO\online-todo-list\src\main\java\com\deloitee\online\todolist\model\Role.java
+C:\Users\e106717\IdeaProjects\repos\TODO\online-todo-list\src\main\java\com\deloitee\online\todolist\config\SecurityConfiguration.java
+C:\Users\e106717\IdeaProjects\repos\TODO\online-todo-list\src\main\java\com\deloitee\online\todolist\OnlineTodoListApplication.java
+C:\Users\e106717\IdeaProjects\repos\TODO\online-todo-list\src\main\java\com\deloitee\online\todolist\controller\UserController.java
+C:\Users\e106717\IdeaProjects\repos\TODO\online-todo-list\src\main\java\com\deloitee\online\todolist\model\Status.java
+C:\Users\e106717\IdeaProjects\repos\TODO\online-todo-list\src\main\java\com\deloitee\online\todolist\controller\TaskController.java
+C:\Users\e106717\IdeaProjects\repos\TODO\online-todo-list\src\main\java\com\deloitee\online\todolist\service\UserServiceImpl.java
+C:\Users\e106717\IdeaProjects\repos\TODO\online-todo-list\src\main\java\com\deloitee\online\todolist\exception\UserNotFoundException.java
+C:\Users\e106717\IdeaProjects\repos\TODO\online-todo-list\src\main\java\com\deloitee\online\todolist\model\Task.java
+C:\Users\e106717\IdeaProjects\repos\TODO\online-todo-list\src\main\java\com\deloitee\online\todolist\repository\RoleRepository.java
+C:\Users\e106717\IdeaProjects\repos\TODO\online-todo-list\src\main\java\com\deloitee\online\todolist\repository\UserRepository.java
+C:\Users\e106717\IdeaProjects\repos\TODO\online-todo-list\src\main\java\com\deloitee\online\todolist\model\User.java
+C:\Users\e106717\IdeaProjects\repos\TODO\online-todo-list\src\main\java\com\deloitee\online\todolist\exception\TasksAPIRuntimeException.java
+C:\Users\e106717\IdeaProjects\repos\TODO\online-todo-list\src\main\java\com\deloitee\online\todolist\service\TaskService.java
+C:\Users\e106717\IdeaProjects\repos\TODO\online-todo-list\src\main\java\com\deloitee\online\todolist\repository\TaskRepository.java

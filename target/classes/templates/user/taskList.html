@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Task List</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/home.css}"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<!-- <h3 th:inline="text">Hello [[${#httpServletRequest.remoteUser}]]!</h3> -->
+	<a style="color: blue" th:href="@{/}">Home</a>
+	<form th:action="@{/logout}" method="post">
+		<input type="submit" value="Sign Out" />
+	</form>
+	
+	<br>
+    <div class="container my-2">
+    <div class="card">
+    <div class="card-body">
+    	<div class="panel-heading">
+               <h2>Welcome <span th:utext="${userName}"></span> </h2>
+            </div>
+        <div th:switch="${tasks}" class="container my-5">
+            <p class="my-5">
+                <a th:href="@{/user/edit}" class="btn btn-primary">
+                <i class="fas fa-user-plus ml-2"> Add New Task </i></a>
+            </p>
+            <div class="col-md-10">
+                <h2 th:case="null">No record found !!</h2>
+                <div th:case="*">
+                    <table class="table table-bordered table-striped">
+
+						<thead>
+						<tr>
+						    <th>Task ID</th>
+						    <th>Title</th>
+						    <th>Status</th>
+						    <th>Last Updated Date</th>
+						    <th>Edit</th>
+						    <th>Delete</th>
+						</tr>
+						</thead>
+
+                        <tbody>
+                            <tr th:each="task : ${tasks}">
+                                <td th:text="${task.id}"></td>
+                                <td th:text="${task.title}"></td>
+                                <td th:text="${task.status}"></td>
+                                <td th:text="${task.lastUpdatedDate}"></td>
+                                <td>
+                                    <a th:href="@{/user/edit/{id}(id=${task.id})}"
+                                             class="btn btn-mini btn-primary">
+                                        <i class="icon-edit icon-white"></i> Edit
+                                    </a>
+                                </td>
+                                <td>
+                                    <a th:href="@{/user/deleteTask/{id}(id=${task.id})}"
+                                              class="btn btn-mini btn-danger">
+                                        <i class="icon-remove icon-white"></i> Delete
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+ 
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+	
+</body>
+</html>

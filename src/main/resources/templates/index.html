@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en"
+xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <link rel="shortcut icon" href="static/img/todolist.ico"/>
+
+    <title>To-Do List Portal</title>
+
+    <!-- <link rel="stylesheet" type="text/css" th:href="@{/css/login.css}"/> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+
+<!-- <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="brand" href="index.html">Todolist MVC</a>
+
+
+            <ul class="nav pull-right">
+                <li class=""><a href="register.html">Register</a></li>
+                <li class=""><a href="login.html">Login</a></li>
+            </ul>
+
+
+        </div>
+    </div>
+</div>  -->
+
+<div class="container">
+    <div class="row well">
+        <div class="span10 offset1">
+            <div class="row">
+
+                <div class="span5">
+                    <h3>Welcome to Todolist MVC Portal</h3>
+
+                    <p>
+	                    <h4>Todolist MVC is a web-based task manager which allows you to :</h4>
+	                    <ul>
+	                        <li>Save and organize your task</li>
+	                        <li>Update the status of your task</li>
+	                        <li>Delete your tasks</li>
+	                        <li>View list of your tasks</li>
+	                    </ul>
+	                    <h4>Let's Create a new Task !</h4>
+                    </p>
+
+
+                </div>
+
+               <!--  <div class="span5">
+                    <img th:src="@{/images/todolist.jpg}" alt="todolist">
+                </div> -->
+
+            </div>
+
+        </div>
+
+		<div class="row">
+        <div class="container">
+		    <!-- <img th:src="@{/images/login.jpg}" class="img-responsive center-block" width="300" height="300" alt="Logo"/> -->
+		    <form th:action="@{/login}" method="POST" class="form-signin">
+		        <h3 class="form-signin-heading" th:text="Welcome"></h3>
+		        <br/>
+		
+		        <input type="text" id="email" name="email" th:placeholder="Email"
+		               class="form-control"/> <br/>
+		        <input type="password" th:placeholder="Password"
+		               id="password" name="password" class="form-control"/> <br/>
+		
+		        <div align="center" th:if="${param.error}">
+		            <p style="font-size: 20; color: #FF1C19;">Email or Password invalid, please verify</p>
+		        </div>
+		        <div class="form-actions">
+		        	<button class="btn btn-lg btn-primary btn-block" name="Submit" value="Login" type="Submit"
+		                th:text="Login"></button>
+		         </div>
+		         
+		         <div align="center">
+                        Don't have an account? <a href="#" th:href="@{/registration}">Sign Up here</a>
+                    </div>
+		         
+		         
+		    </form>
+		</div>
+    </div>
+    </div>
+	
+</div>
+
+<footer>
+    <div class="container">
+        <div class="row well">
+            <div align="center">
+                <p>&copy; 2020 Todolist MVC</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>

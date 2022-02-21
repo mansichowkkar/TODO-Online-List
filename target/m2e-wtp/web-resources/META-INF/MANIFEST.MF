@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: online-todo-list
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: darsa
+Implementation-Vendor-Id: com.online.todolist
+Build-Jdk: 1.8.0_251
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/online-todo-list
+Created-By: Maven Integration for Eclipse
+
